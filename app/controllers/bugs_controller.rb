@@ -13,4 +13,7 @@ class BugsController < ApplicationController
 def show
 	@bug = Bug.find(params["id"])
 end
+def index
+	@bugs = Bug.all
+	end
 end
